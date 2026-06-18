@@ -81,5 +81,5 @@ def predict(payload: CustomerInput):
         }
     except Exception as e:
         metrics["n_errors"] += 1
-        logger.error("Erreur pendant la prédiction : %s", e)
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.error("Erreur pendant la prédiction : %s", e, exc_info=True)
+        raise HTTPException(status_code=500, detail="Erreur interne pendant la prédiction")
