@@ -9,7 +9,6 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
 
-API_TOKEN = "churn-demo-token"
 MODEL_PATH = Path("artifacts/model.pkl")
 FEATURE_COLUMNS_PATH = Path("artifacts/feature_columns.json")
 
