@@ -1,6 +1,6 @@
 # Churn prediction MLOps
 
-Projet de prédiction de churn client.
+Projet de prédiction de churn client réalisé par : Hamid, Joan et Romain.
 
 ## Installation
 
