@@ -65,7 +65,7 @@ def predict(payload: CustomerInput):
 
     try:
         df = pd.DataFrame([payload.model_dump()])
-        df_encoded = pd.get_dummies(df, drop_first=True)
+        df_encoded = pd.get_dummies(df, drop_first=False)
         df_aligned = df_encoded.reindex(columns=feature_columns, fill_value=0)
 
         prediction = model.predict(df_aligned)[0]
