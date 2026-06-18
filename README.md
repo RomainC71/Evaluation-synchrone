@@ -30,6 +30,7 @@ Routes disponibles :
 
 - `/health`
 - `/predict`
+- `/predict_batch` : meme format que `/predict` mais avec une liste d'entrees (max 100), renvoie une liste de predictions dans le meme ordre
 - `/metrics`
 
 ## Tests
